@@ -22,7 +22,8 @@
 - (UIButton *)btn{
     if(!_btn){
         _btn=[UIButton buttonWithType:UIButtonTypeCustom];
-        _btn.frame=CGRectMake(100, 100, 100, 50);
+        _btn.bounds=CGRectMake(0, 0, 100, 50);
+        _btn.center=self.view.center;
         [_btn addTarget:self action:@selector(tapbtn:) forControlEvents:UIControlEventTouchUpInside];
         _btn.backgroundColor=[UIColor orangeColor];
     }
