@@ -11,7 +11,7 @@
 
 @protocol HXLTabBarDelegate <NSObject>
 @optional
-- (void)tabBarPlusBtnClick:(HXLTabBar *)tabBar;
+- (void)tabBarPlusBtnClick:(HXLTabBar *)tabBar andItem:(UIButton *)btn;
 @end
 
 
@@ -21,3 +21,4 @@
 @property (nonatomic, weak) id<HXLTabBarDelegate> myDelegate ;
 
 @end
+
