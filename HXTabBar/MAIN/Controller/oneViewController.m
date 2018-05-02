@@ -25,7 +25,7 @@
         _btn.bounds=CGRectMake(0, 0, 100, 50);
         _btn.center=self.view.center;
         [_btn addTarget:self action:@selector(tapbtn:) forControlEvents:UIControlEventTouchUpInside];
-        _btn.backgroundColor=[UIColor orangeColor];
+        _btn.backgroundColor=[UIColor blueColor];
     }
     return _btn;
 }
